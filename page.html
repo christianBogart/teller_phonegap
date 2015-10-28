@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>POS Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/jquery-2.1.3.js"></script>
+         <script src="assets/js/main.js"></script>
+          <script src="cordova.js"></script>
+
+<script type="text/javascript">
+	window.onload = function() {
+ displayallproducts();
+ displayallsales();
+};
+
+</script>
+
+  </head>
+
+  <body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><b>FLATTY</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" onclick="displayallproducts()">View stock</a></li>
+            <li><a href="#" onclick="displayaddform()">Add Product</a></li>
+            <li><a href="#" onclick="displayeditform()">Edit Product</a></li>
+             <li><a href="#" onclick="displayscanform()">Edit Product</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+    
+
+	<div id="headerwrap">
+		<div class="container">
+	<div class="row">
+				<div class="col-lg-6">
+				<div>
+					<h1>Products in stock</h1>
+					<div id="products_panel">
+						<table class='table'> 
+						<thead>
+						<tr> 
+						<th>ID</th>
+						<th>Name</th>
+						<th>Quantity in stock</th>
+						<th>Price(GHC)</th>
+						</tr> 
+						</thead>
+						<tbody id="products_table">
+
+						</tbody>
+						 </table>
+						 </div>
+					</div>
+					
+					<div id="status">
+						
+					</div>			
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6" >
+				<div id="display">
+					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+					</div>
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+	</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	
+	<div class="container">
+	<div class="row">
+				<div class="col-lg-6">
+				<div id="add_panel" style.visibility ="hidden">
+				</div>
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+					
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+		<p class="centered">Created by CB</p>
+	</div><!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+     <!-- jQuery --> 
+
+  </body>
+</html>
