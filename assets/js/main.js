@@ -15,7 +15,7 @@ var old_qty = 0;
 			            {
 			 				var user_name = encodeURI(document.getElementById("user_name").value);
 							var user_pass = encodeURI(document.getElementById("user_pass").value);
-						   var url = "controller.php?cmd=1&user_name="+user_name+"&user_pass="+user_pass;
+						   var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=1&user_name="+user_name+"&user_pass="+user_pass;
 			               var obj = sendRequest (url);
 						
 							
@@ -41,7 +41,7 @@ var old_qty = 0;
 		            $ ( document ).ready ( function ( )
 		            {
 		 
-					   var url = "controller.php?cmd=2";
+					   var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=2";
 		               var obj = sendRequest (url);
 					
 						
@@ -79,7 +79,7 @@ var old_qty = 0;
 				var product_price = encodeURI(document.getElementById("product_price").value);
 				
 				
-				 var url = "controller.php?cmd=3&product_name="+product_name+"&product_qty="+product_qty+"&product_price="+product_price;
+				 var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=3&product_name="+product_name+"&product_qty="+product_qty+"&product_price="+product_price;
                var obj = sendRequest (url);
 			  if(obj.result==1){
 			  //statusmessages(obj.message);
@@ -103,7 +103,7 @@ var old_qty = 0;
 				
 				
 				
-				 var url = "controller.php?cmd=7&product_id="+product_id+"&product_name="+product_name+"&product_qty="+product_qty+"&product_price="+product_price+"&total_price="+total_sale;
+				 var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=7&product_id="+product_id+"&product_name="+product_name+"&product_qty="+product_qty+"&product_price="+product_price+"&total_price="+total_sale;
                var obj = sendRequest (url);
 			  if(obj.result==1){
 			  //statusmessages(obj.message);
@@ -126,7 +126,7 @@ var old_qty = 0;
 		            $ ( document ).ready ( function ( )
 		            {
 		 
-					   var url = "controller.php?cmd=6";
+					   var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=6";
 		               var obj = sendRequest (url);
 					
 						
@@ -162,7 +162,7 @@ var old_qty = 0;
 				var product_price = encodeURI(document.getElementById("product_price").value);
 				
 				
-				 var url = "controller.php?cmd=4&product_id="+product_id+"&product_price="+product_price;
+				 var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=4&product_id="+product_id+"&product_price="+product_price;
                var obj = sendRequest (url);
 			  if(obj.result===1){
 			  //statusmessages(obj.message);
@@ -181,7 +181,7 @@ var old_qty = 0;
 				var product_qty = encodeURI(document.getElementById("product_qty").value);
 				var new_qty = qty - product_qty;
 				
-				 var url = "controller.php?cmd=8&product_id="+product_id+"&product_qty="+new_qty;
+				 var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=8&product_id="+product_id+"&product_qty="+new_qty;
                var obj = sendRequest (url);
 			  if(obj.result===1){
 			  //statusmessages(obj.message);
@@ -255,7 +255,7 @@ var old_qty = 0;
 				$ ( document ).ready ( function ( )
 		            {
 		 
-					   var url = "controller.php?cmd=5&product_id="+product_id;
+					   var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=5&product_id="+product_id;
 		               var obj = sendRequest (url);
 					
 						
@@ -293,7 +293,7 @@ var old_qty = 0;
 				$ ( document ).ready ( function ( )
 		            {
 		 			   var product_id = encodeURI(document.getElementById("product_id").value);
-					   var url = "controller.php?cmd=5&product_id="+product_id;
+					   var url = "http://cs.ashesi.edu.gh/~csashesi/class2016/christian-biassey-bogart/MobileWeb/midsem_miniproj/controller.php?cmd=5&product_id="+product_id;
 		               var obj = sendRequest (url);
 					
 						
